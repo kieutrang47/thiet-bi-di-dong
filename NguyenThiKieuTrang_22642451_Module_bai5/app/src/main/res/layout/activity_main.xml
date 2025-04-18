@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9F96E4"
+    android:paddingLeft="0dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:paddingLeft="10dp"
+        android:text="User Name: "
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblusername"
+        android:alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Kiều Trang"
+        android:textSize="20sp" />
+
+<!--    buttom ok-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOk"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/editUserName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Ok"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
+<!--buttom cancel-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancel"
+        android:layout_width="115dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/editUserName"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Cancel"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+<!--cornerRadius => không bo góc cho buttom-->
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <!-- Buttom ONE-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="ONE"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"/>
+
+    <!-- buttom two -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="TWO"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"/>
+
+    <!-- buttom three -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="THREE"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"/>
+
+<!--    4-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/btn1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="FOUR"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"/>
+
+    <!-- 5 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/btn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="FIVE"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:cornerRadius="0dp" />
+
+    <!-- 6-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/btn3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="SIX"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"/>
+
+    <!--7-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_above="@id/btn8"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="SEVEN"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:cornerRadius="0dp" />
+
+    <!--8-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#00fefb"
+        android:text="EIGHT"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#009632"
+                android:text="Các kiểu lập trình sự kiện"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Số a:"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="80" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Số b:"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="80" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#009632"
+                android:text="160"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="Tổng 2 số"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:cornerRadius="0dp"
+                android:onClick="tinhTong"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="Hiệu 2 số"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="Tích 2 số"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnThuong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="Thương 2 số"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUCLN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="Ước số chung lớn nhất"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnThoat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="Thoát chương trình"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
