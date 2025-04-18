@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!-- Spinner để chọn danh mục -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:text="Chọn danh mục:"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="42dp" />
+
+    <!-- AutoCompleteTextView để nhập sản phẩm mới -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:text="Chọn danh mục:"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteProduct"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1" />
+
+        <Button
+            android:id="@+id/btnAddProduct"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/bottom_bar"
+            android:text="Nhập"
+            android:textColor="#070707"
+            android:textSize="20sp"
+            app:backgroundTint="#C5C3C3" />
+    </LinearLayout>
+
+    <!-- GridView để hiển thị danh sách sản phẩm -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:text="Danh sách sản phẩm:"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp" />
+
+    <GridView
+        android:id="@+id/gridViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp" />
+</LinearLayout>

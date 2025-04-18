@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NguyenThiKieuTrang_22642451_Module2_bai16</string>
+    <string-array name="list_items">
+        <item>Bin</item>
+        <item>Trang</item>
+        <item>Linh</item>
+        <item>Mai</item>
+        <item>Tuan</item>
+    </string-array>
+
+</resources>

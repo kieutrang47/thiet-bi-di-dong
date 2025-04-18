@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10px"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Them moi Album"
+        android:textColor="#F4EEEE"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtMaAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Album" />
+
+    <EditText
+        android:id="@+id/edtTenAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Album" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10px"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnXoaTrang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa trắng" />
+
+        <Button
+            android:id="@+id/btnLuuAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu Album này" />
+    </LinearLayout>
+
+
+</LinearLayout>
