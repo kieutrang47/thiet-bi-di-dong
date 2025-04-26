@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"/>
+
+    <Button
+        android:id="@+id/btnRotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rotate Image"/>
+
+    <Button
+        android:id="@+id/btnCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crop Image"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Image"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Image"/>
+
+</LinearLayout>
