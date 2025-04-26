@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnShowAllContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#D3D3D3"
+        android:text="Show All Contact"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnAccessCallLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#D3D3D3"
+        android:text="Access The Call Log"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnAccessMediaStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#D3D3D3"
+        android:text="Access Media Store"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnAccessBookmarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        android:text="Access Bookmarks"
+        android:textColor="#000000" />
+
+</LinearLayout>
