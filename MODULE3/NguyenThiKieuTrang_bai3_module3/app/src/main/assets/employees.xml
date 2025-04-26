@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee id="201" title="Team Lead">
+        <name>Ngô Minh Anh</name>
+        <phone>0988123456</phone>
+    </employee>
+    <employee id="202" title="Developer">
+        <name>Phạm Quốc Bảo</name>
+        <phone>0977654321</phone>
+    </employee>
+    <employee id="203" title="Tester">
+        <name>Võ Thị Cẩm Tú</name>
+        <phone>0966345678</phone>
+    </employee>
+    <employee id="204" title="UI/UX Designer">
+        <name>Đặng Thanh Hòa</name>
+        <phone>0955789123</phone>
+    </employee>
+    <employee id="205" title="Project Manager">
+        <name>Lê Hoàng Dũng</name>
+        <phone>0945567890</phone>
+    </employee>
+</employees>

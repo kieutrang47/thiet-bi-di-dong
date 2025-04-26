@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<employees>
+    <employee id="NV01" title="Trưởng phòng">
+        <name>Nguyễn Văn A</name>
+        <phone>0912345678</phone>
+    </employee>
+    <employee id="NV02" title="Trưởng phòng">
+        <name>Trần Thị B</name>
+        <phone>0987654321</phone>
+    </employee>
+    <employee id="NV03" title="Nhân viên">
+        <name>Phạm Văn C</name>
+        <phone>0901122334</phone>
+    </employee>
+    <employee id="NV04" title="Nhân viên">
+        <name>Lê Thị D</name>
+        <phone>0911223344</phone>
+    </employee>
+    <employee id="NV05" title="Thực tập">
+        <name>Đỗ Văn E</name>
+        <phone>0933445566</phone>
+    </employee>
+    <employee id="NV06" title="Thực tập">
+        <name>Nguyễn Thị F</name>
+        <phone>0944556677</phone>
+    </employee>
+</employees>
