@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="My Preference Category"
+        android:textStyle="bold">
+        <CheckBoxPreference
+            android:key="background_color"
+            android:title="Checked để tô màu đỏ, unchecked để màu xanh"
+            android:defaultValue="false"
+            android:titleTextAppearance="@style/PreferenceText" />
+    </PreferenceCategory>
+</PreferenceScreen>
