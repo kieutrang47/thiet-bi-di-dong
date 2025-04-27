@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="24dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn Vai Trò"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#008577"
+                android:layout_marginBottom="32dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bệnh nhân"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPatient"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:icon="@drawable/img_2"
+                app:iconSize="64dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#008577"
+                app:cornerRadius="12dp"
+                app:rippleColor="#B3E5FC"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bác sĩ"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDoctor"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:icon="@drawable/doctor"
+                app:iconSize="64dp"
+                app:iconGravity="textStart"
+                android:backgroundTint="#008577"
+                app:cornerRadius="12dp"
+                app:rippleColor="#B3E5FC"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Spinner hiện ra sau khi chọn Bác sĩ -->
+            <Spinner
+                android:id="@+id/doctorSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#008577" />
+
+            <Button
+                android:id="@+id/btnSelectDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiếp tục với Bác sĩ"
+                android:visibility="gone"
+                android:backgroundTint="#008577"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quản trị viên"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdmin"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:icon="@drawable/admin"
+                app:iconSize="64dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#008577"
+                app:cornerRadius="12dp"
+                app:rippleColor="#B3E5FC" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

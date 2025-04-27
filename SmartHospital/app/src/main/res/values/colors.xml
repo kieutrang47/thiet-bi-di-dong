@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_700">#018786</color>
+    <color name="primary_color">#008577</color>
+    <color name="background_light">#E0F7FA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_hint">#808080</color>
+    <color name="ripple_color">#B3E5FC</color>
+</resources>

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SmartHospital" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="doctor_dashboard">Doctor Dashboard</string>
+    <string name="manage_medicines">Manage Medicines</string>
+    <string name="manage_users">Manage Users</string>
+    <string name="manage_rooms">Manage Rooms</string>
+    <string name="add_medicine">Add Medicine</string>
+
+    <style name="Theme.SmartHospital" parent="Base.Theme.SmartHospital" />
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smarthospital">
+
+    <!-- Quyền truy cập (Permissions) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartHospital">
+
+        <!-- Activity khởi động đầu tiên -->
+        <activity
+            android:name=".ui.RoleSelectionActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Các Activities khác -->
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.PatientDashboardActivity" />
+        <activity android:name=".ui.DoctorDashboardActivity" />
+        <activity android:name=".ui.AdminDashboardActivity" />
+        <activity android:name=".ui.ManageUsersActivity" />
+        <activity android:name=".ui.ManageMedicinesActivity" />
+        <activity android:name=".ui.ManageRoomsActivity" />
+        <activity android:name=".ui.PrescriptionListActivity" />
+        <activity android:name=".ui.PrescriptionActivity" />
+        <activity android:name=".ui.EditProfileActivity" />
+        <activity android:name=".ui.ExaminePatientActivity" />
+
+        <!-- Service và Receiver cho thông báo -->
+        <service
+            android:name=".service.AppointmentNotificationService"
+            android:exported="false" />
+
+<!--        <service-->
+<!--            android:name=".service.PatientNotificationService"-->
+<!--            android:exported="false" />-->
+
+        <!-- Receiver nhận báo thức và xử lý thông báo -->
+        <receiver
+            android:name=".service.AlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.smarthospital.PATIENT_NOTIFICATION" />
+                <action android:name="com.example.smarthospital.DISMISS_ALARM" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    package="com.example.smarthospital">-->
+
+<!--    &lt;!&ndash; Quyền truy cập (Permissions) &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.INTERNET" />-->
+<!--    <uses-permission android:name="android.permission.VIBRATE" />-->
+<!--    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+<!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />-->
+<!--    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />-->
+
+<!--    <application-->
+<!--        android:allowBackup="true"-->
+<!--        android:icon="@mipmap/ic_launcher"-->
+<!--        android:label="@string/app_name"-->
+<!--        android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--        android:supportsRtl="true"-->
+<!--        android:theme="@style/Theme.SmartHospital">-->
+
+<!--        &lt;!&ndash; Activity khởi động đầu tiên &ndash;&gt;-->
+<!--        <activity-->
+<!--            android:name=".ui.RoleSelectionActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+<!--        &lt;!&ndash; Các Activities khác &ndash;&gt;-->
+<!--        <activity android:name=".ui.LoginActivity" />-->
+<!--        <activity android:name=".ui.PatientDashboardActivity" />-->
+<!--        <activity android:name=".ui.DoctorDashboardActivity" />-->
+<!--        <activity android:name=".ui.AdminDashboardActivity" />-->
+<!--        <activity android:name=".ui.ManageUsersActivity" />-->
+<!--        <activity android:name=".ui.ManageMedicinesActivity" />-->
+<!--        <activity android:name=".ui.ManageRoomsActivity" />-->
+<!--        <activity android:name=".ui.PrescriptionListActivity" />-->
+<!--        <activity android:name=".ui.PrescriptionActivity" />-->
+<!--        <activity android:name=".ui.EditProfileActivity" />-->
+<!--        <activity android:name=".ui.ExaminePatientActivity" />-->
+
+
+<!--       -->
+
+
+<!--    </application>-->
+<!--</manifest>-->

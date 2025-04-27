@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnAction" type="id" />
+    <item name="tabLayout" type="id" />
+    <item name="etSpecialty" type="id" />
+    <item name="btnViewPrescriptions" type="id" />
+    <item name="spinnerDoctor" type="id" />
+    <item name="etDate" type="id" />
+    <item name="etTime" type="id" />
+    <item name="etReason" type="id" />
+    <item name="btnBookAppointment" type="id" />
+</resources>

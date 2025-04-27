@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SmartHospital</string>
+    <string-array name="specialties">
+        <item>Nội khoa</item>
+        <item>Ngoại khoa</item>
+        <item>Nhi khoa</item>
+        <item>Sản khoa</item>
+        <item>Tim mạch</item>
+        <item>Thần kinh</item>
+        <item>Da liễu</item>
+        <item>Mắt</item>
+        <item>Tai mũi họng</item>
+        <item>Răng hàm mặt</item>
+    </string-array>
+</resources>

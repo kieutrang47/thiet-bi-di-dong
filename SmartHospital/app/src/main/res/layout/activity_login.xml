@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="24dp">
+
+    <!-- CardView để chứa toàn bộ nội dung -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <!-- Logo hoặc tiêu đề -->
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Hospital Logo"
+                    android:src="@drawable/img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smart Hospital"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#008577"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Tab Layout -->
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabIndicatorColor="#008577"
+                    app:tabIndicatorHeight="4dp"
+                    app:tabTextColor="#808080"
+                    app:tabSelectedTextColor="#008577"
+                    app:tabBackground="@android:color/white"
+                    app:tabRippleColor="#B3E5FC">
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login" />
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register" />
+                </com.google.android.material.tabs.TabLayout>
+
+                <!-- Email Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:hintTextColor="#008577"
+                    app:boxStrokeColor="#008577"
+                    app:boxBackgroundColor="#F5F5F5"
+                    app:errorEnabled="true"
+                    android:hint="Email">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#212121" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Password Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:hintTextColor="#008577"
+                    app:boxStrokeColor="#008577"
+                    app:boxBackgroundColor="#F5F5F5"
+                    app:errorEnabled="true"
+                    android:hint="Password">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="#212121" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Full Name Input (ẩn khi ở tab Login) -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fullNameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:hintTextColor="#008577"
+                    app:boxStrokeColor="#008577"
+                    app:boxBackgroundColor="#F5F5F5"
+                    app:errorEnabled="true"
+                    android:hint="Full Name"
+                    android:visibility="gone">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#212121" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Specialty Input (ẩn khi ở tab Login hoặc không phải bác sĩ) -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/specialtyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:hintTextColor="#008577"
+                    app:boxStrokeColor="#008577"
+                    app:boxBackgroundColor="#F5F5F5"
+                    app:errorEnabled="true"
+                    android:hint="Specialty"
+                    android:visibility="gone">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSpecialty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#212121" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Action Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAction"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Login"
+                    android:textSize="16sp"
+                    android:backgroundTint="#008577"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="12dp"
+                    app:rippleColor="#B3E5FC" />
+
+            </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--code cũ -->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#E0F7FA"-->
+<!--    android:padding="24dp">-->
+
+<!--    &lt;!&ndash; CardView để chứa toàn bộ nội dung &ndash;&gt;-->
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        app:cardElevation="8dp"-->
+<!--        app:cardBackgroundColor="#FFFFFF"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="24dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center_horizontal">-->
+
+<!--                &lt;!&ndash; Logo hoặc tiêu đề &ndash;&gt;-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="120dp"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:contentDescription="Hospital Logo"-->
+<!--                    android:src="@drawable/img" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Smart Hospital"-->
+<!--                    android:textSize="28sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#008577"-->
+<!--                    android:layout_marginBottom="24dp" />-->
+
+<!--                &lt;!&ndash; Tab Layout &ndash;&gt;-->
+<!--                <com.google.android.material.tabs.TabLayout-->
+<!--                    android:id="@+id/tabLayout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:tabIndicatorColor="#008577"-->
+<!--                    app:tabIndicatorHeight="4dp"-->
+<!--                    app:tabTextColor="#808080"-->
+<!--                    app:tabSelectedTextColor="#008577"-->
+<!--                    app:tabBackground="@android:color/white"-->
+<!--                    app:tabRippleColor="#B3E5FC">-->
+<!--                    <com.google.android.material.tabs.TabItem-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Login" />-->
+<!--                    <com.google.android.material.tabs.TabItem-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Register" />-->
+<!--                </com.google.android.material.tabs.TabLayout>-->
+
+<!--                &lt;!&ndash; Email Input &ndash;&gt;-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="24dp"-->
+<!--                    app:hintTextColor="#008577"-->
+<!--                    app:boxStrokeColor="#008577"-->
+<!--                    app:boxBackgroundColor="#F5F5F5"-->
+<!--                    android:hint="Email">-->
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etEmail"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:inputType="textEmailAddress"-->
+<!--                        android:textColor="#212121" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                &lt;!&ndash; Password Input &ndash;&gt;-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    app:hintTextColor="#008577"-->
+<!--                    app:boxStrokeColor="#008577"-->
+<!--                    app:boxBackgroundColor="#F5F5F5"-->
+<!--                    android:hint="Password">-->
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etPassword"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:inputType="textPassword"-->
+<!--                        android:textColor="#212121" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                &lt;!&ndash; Register Fields (ẩn khi ở tab Login) &ndash;&gt;-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/fullNameLayout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    app:hintTextColor="#008577"-->
+<!--                    app:boxStrokeColor="#008577"-->
+<!--                    app:boxBackgroundColor="#F5F5F5"-->
+<!--                    android:hint="Full Name"-->
+<!--                    android:visibility="gone">-->
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etFullName"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#212121" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/specialtyLayout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    app:hintTextColor="#008577"-->
+<!--                    app:boxStrokeColor="#008577"-->
+<!--                    app:boxBackgroundColor="#F5F5F5"-->
+<!--                    android:hint="Specialty"-->
+<!--                    android:visibility="gone">-->
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etSpecialty"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#212121" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                &lt;!&ndash; Action Button &ndash;&gt;-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/btnAction"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="56dp"-->
+<!--                    android:layout_marginTop="32dp"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:text="Login"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:backgroundTint="#008577"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    app:cornerRadius="12dp"-->
+<!--                    app:rippleColor="#B3E5FC" />-->
+
+<!--            </LinearLayout>-->
+<!--        </ScrollView>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

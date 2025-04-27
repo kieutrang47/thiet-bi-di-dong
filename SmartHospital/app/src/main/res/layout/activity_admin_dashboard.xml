@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="24dp">
+
+    <!-- CardView để chứa nội dung -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Quản trị hệ thống"
+                android:textColor="#008577"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Nút Manage Users -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManageUsers"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Quản Lý Người Dùng"
+                android:textSize="16sp"
+                android:backgroundTint="#008577"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp"
+                app:rippleColor="#B3E5FC"
+                android:layout_marginTop="16dp" />
+
+            <!-- Nút Manage Medicines -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManageMedicines"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Quản Lý Thuốc"
+                android:textSize="16sp"
+                android:backgroundTint="#008577"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp"
+                app:rippleColor="#B3E5FC"
+                android:layout_marginTop="16dp" />
+
+            <!-- Nút Manage Rooms -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManageRooms"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Quản Lý Phòng"
+                android:textSize="16sp"
+                android:backgroundTint="#008577"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp"
+                app:rippleColor="#B3E5FC"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_more"
+        android:backgroundTint="#008577"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
